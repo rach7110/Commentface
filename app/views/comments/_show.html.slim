@@ -1,0 +1,16 @@
+.comment.row data-id=comment.id
+  .small-3.large-2.columns
+    img src=avatar_src_for_comment(comment)
+  .small-9.large-10.columns
+    p
+      strong.name #{comment.name}:&nbsp;
+      span.message = comment.message
+    ul.inline-list
+      li.score #{comment.score} likes
+      li
+        = link_to 'Like', upvote_comment_path(comment), :method => :post
+      li
+        a href="#" data-comment-id=comment.id Edit
+      li
+        = link_to 'Delete :(', comment, :method => :delete, :data => { confirm: 'Are you sure?' }
+hr
