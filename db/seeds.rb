@@ -3,6 +3,6 @@
 
 Comment.create([
   { name: 'Claudio', message: "I pray you leave me.", :score => 1 },
-  { name: 'Benedick', message: "Ho, now you strike like the blind man - 'twas the boy that stole your meat, and you'll beat the post.", :score => 2 }
+  { name: 'Benedick', message: "Ho, now you strike like the blind man - 'twas the boy that stole your meat, and you'll beat the post.", :score => 2 },
   { name: 'Claudio', message: "If it will not be, I'll leave you. [Leaves]", :score => 18023 },
 ])
