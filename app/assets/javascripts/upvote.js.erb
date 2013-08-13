@@ -1,8 +1,0 @@
-(function () {
-  var newCommentScore = "<%= plurarlize(@comment.score, 'like' %>");
-  // pluralize => var newCommentScore = "1 like";
-
-  $('.comments').append(commentHtml);
-})();
-
-// _show.html.slim has a comment id for each comment. Use it to update the .score class
