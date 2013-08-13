@@ -30,6 +30,7 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to @comment, notice: 'Comment successfully flip-flopped.' }
+
     end
   end
 
@@ -42,6 +43,7 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to root_url, notice: 'Comment happiness increased +1!' }
+      format.js { render :layout => false }
     end
   end
 
